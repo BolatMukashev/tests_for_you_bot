@@ -1,4 +1,6 @@
-import os
+from dotenv import dotenv_values
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "YOUR_OPENAI_API_KEY")
+config = dotenv_values(".env")
+
+BOT_TOKEN = config.get("BOT_TOKEN")
+OPENAI_API_KEY = config.get("OPENAI_API_KEY")

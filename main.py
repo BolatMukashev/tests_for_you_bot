@@ -12,6 +12,9 @@ from aiogram.filters.command import Command
 from aiogram.types import FSInputFile
 import io
 
+from config import BOT_TOKEN, OPENAI_API_KEY
+
+
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
